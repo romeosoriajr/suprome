@@ -1,0 +1,23 @@
+body {
+  background: rgb(35, 55, 20);
+  background: linear-gradient(100deg, rgba(35,55,20,1) 10%, rgba(109,130,70,1) 100%);
+}
+
+.worst-behavior {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#nonstop {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #EFCFB6;
+}
+
+.hotline-bling {
+  opacity: 0%;
+}

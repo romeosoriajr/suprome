@@ -1,6 +1,6 @@
 <template lang="pug">
 Layout
-  h1 Sup? I'm Rome.
+  .text-4xl Sup? I'm Rome.
 </template>
 
 <script>
@@ -10,9 +10,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>

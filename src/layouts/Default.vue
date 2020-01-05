@@ -1,10 +1,10 @@
 <template lang="pug">
-.layout
-    header.header
-      strong
-        g-link(to="/") {{ $static.metadata.siteName }}
-      nav.nav
-        g-link.nav__link(to="/") Main
+#hello
+  nav.flex.items-center.justify-between.flex-wrap.bg-teal-500.p6
+    .w-full.block.flex-grow.lg_flex.lg_items-center.lg_w-auto
+      .text-sm.lg_flex-grow
+        a.block.mt-4.lg_inline-block.lg_mt-0.text-teal-200.hover_text-white.mr-4(href="/") Main
+  .container.mx-auto
     slot
 </template>
 
@@ -17,29 +17,4 @@ query {
 </static-query>
 
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>

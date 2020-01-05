@@ -8,7 +8,21 @@ module.exports = {
   siteName: "supro.me",
   plugins: [
     {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "content/posts/**/*.md",
+        typeName: "Post",
+        route: "/blog/:slug"
+      }
+    },
+    {
       use: "gridsome-plugin-pug"
+    },
+    {
+      use: "gridsome-plugin-tailwindcss",
+      options: {
+        separator: "_"
+      }
     }
   ],
   port: 3030

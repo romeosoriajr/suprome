@@ -1,20 +1,7 @@
 <template lang="pug">
-#nav
-  .nav-link Link 1
-  .nav-link Link 2
-  .nav-link Link 3
+b-navbar(fixed-top type="is-black")
+  template(slot="end")
+    b-navbar-item(tag="g-link" to="/blog/") Projects
+    b-navbar-item(tag="g-link" to="/blog/") Feed
+    b-navbar-item(tag="g-link" to="/blog/") Contact
 </template>
-
-<style>
-#nav {
-  display: flex;
-  background: grey;
-  justify-content: flex-end;
-}
-
-.nav-link {
-  font-size: 1.25rem;
-  color: blue;
-  padding: 10px;
-}
-</style>

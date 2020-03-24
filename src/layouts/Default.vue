@@ -1,26 +1,20 @@
 <template lang="pug">
-#hello
+.suprome
   NavBar
-  .container.mx-auto.test-boundaries
-    slot
+  slot
 </template>
 
 <script>
-import NavBar from '../components/NavBar'
+import NavBar from '@/components/NavBar'
 export default {
+  metaInfo: {
+    title: 'supro.me'
+  },
   components: { NavBar }
 }
 </script>
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
 <style>
-.test-boundaries {
-  background: yellow;
+::-webkit-scrollbar {
+  display: none;
 }
 </style>

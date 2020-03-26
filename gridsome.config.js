@@ -10,19 +10,21 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
+        path: "content/projects/**/*.md",
+        typeName: "Project",
+        route: "/projects/:title"
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
         path: "content/posts/**/*.md",
         typeName: "Post",
-        route: "/blog/:slug"
+        route: "/blog/:title"
       }
     },
     {
       use: "gridsome-plugin-pug"
-    },
-    {
-      use: "gridsome-plugin-tailwindcss",
-      options: {
-        separator: "_"
-      }
     }
   ],
   port: 3030

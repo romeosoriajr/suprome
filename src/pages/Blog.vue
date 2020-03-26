@@ -1,10 +1,12 @@
 <template lang="pug">
 Layout
-  .text-4xl Blog
-  .text-xl Show list of posts
-  .h5 {{ $page.allPost }}
-  section.posts
-    PostListItem(v-for="edge in $page.allPost.edges", :key="edge.node.id", :post="edge.node")
+  section.hero.is-primary.is-bold
+    .hero-body
+      h1.title Feed
+      h2.subtitle Feed Subtitle
+  section.section
+    .post-item
+      PostListItem(v-for="edge in $page.allPost.edges", :key="edge.node.id", :post="edge.node")
 </template>
 
 <page-query>
@@ -14,9 +16,11 @@ Layout
       edges {
         node {
           id
+          text
+          image
           title
-          date (format: "M D YYYY")
           description
+          date (format: "M D YYYY")
           path
         }
       }
@@ -29,3 +33,5 @@ export default {
   components: { PostListItem }
 }
 </script>
+<style>
+</style>

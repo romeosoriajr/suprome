@@ -7,5 +7,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
   Vue.use(Buefy)
+
+  // add buefy's nav class to body
+  head.bodyAttrs = { class: 'has-navbar-fixed-top' }
   Vue.component('Layout', DefaultLayout)
 }

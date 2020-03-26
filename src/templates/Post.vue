@@ -1,20 +1,9 @@
 <template lang="pug">
 Layout
-  .container
-    .card
-      .card-header
-        p.card-header-title Card Header Title
-        .card-header-icon Icon
-      .card-image
-        figure.image.is-4by3
-          img(src="https://bulma.io/images/placeholders/1280x960.png")
-      .card-content
-        .media
-          .media-content
-            .title.is-4 {{ $page.post.title }}
-            .subtitle.is-6 Subtitle Text
-        .content blah blah blah
+  section.section
+      PostListItem(:post="$page.post")
 </template>
+
 <page-query>
 query Post ($path: String!) {
   post: post (path: $path) {
@@ -22,6 +11,16 @@ query Post ($path: String!) {
     title
     description
     date
+    image
+    text
   }
 }
 </page-query>
+<script>
+import PostListItem from '@/components/PostListItem'
+export default {
+  components: { PostListItem }
+}
+</script>
+<style>
+</style>

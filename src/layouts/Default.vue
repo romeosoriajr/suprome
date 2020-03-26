@@ -1,7 +1,9 @@
 <template lang="pug">
 .suprome
   NavBar
-  slot
+  transition(name="fade" appear)
+    main
+      slot
 </template>
 
 <script>
@@ -16,5 +18,17 @@ export default {
 <style>
 ::-webkit-scrollbar {
   display: none;
+}
+.suprome {
+  left: 0;
+  top: 0;
+}
+
+.fade-enter-active {
+  transition: opacity .125s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 </style>

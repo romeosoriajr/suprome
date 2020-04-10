@@ -1,5 +1,9 @@
 <template lang="pug">
 Layout
+  section.hero.is-primary.is-bold
+    .hero-body
+      h1.title {{ $page.post.title }}
+      h2.subtitle {{ $page.post.description }}
   section.section
       PostListItem(:post="$page.post")
 </template>

@@ -1,4 +1,7 @@
 <template lang="pug">
 Layout
-  .text-4xl Contact.vue
+  section.hero.is-primary.is-bold
+    .hero-body
+      h1.title Contact
+      h2.subtitle Contact Subtitle
 </template>

@@ -5,7 +5,7 @@ Layout
       h1.title Projects
       h2.subtitle Projects Subtitle
   section.section
-    .posts.columns.is-multiline.is-desktop
+    .posts.columns.is-multiline
       template(v-for="edge in $page.allProject.edges")
         .column.is-one-third
           ProjectCard(:project="edge.node" :key="edge.node.id")

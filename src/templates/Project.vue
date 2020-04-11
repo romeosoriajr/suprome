@@ -32,6 +32,9 @@ query Project ($path: String!) {
 <script>
 </script>
 <style>
+.section {
+  padding-top: 1.5rem;
+}
 .project-figure {
   display: flex;
   flex-direction: column;

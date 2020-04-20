@@ -1,11 +1,16 @@
 <template lang="pug">
 Layout
   section.section
-    .container.columns.is-mobile.is-vcentered
+    .container.columns.is-desktop.is-vcentered
       .column.is-offset-1
-        h1.title Sup? I'm Rome.
-        h2.subtitle doing things in JavaScript
-    img(id="landing-image" src="https://bulma.io/images/placeholders/1280x960.png")
+        figure.image.is-256x256
+          img.is-rounded(id="profile-image" src="https://bulma.io/images/placeholders/256x256.png")
+      .column.is-offset-1
+        h1.title.has-text-light Sup? I'm Rome.
+        h2.subtitle.has-text-light doing things in js
+        div
+          p.has-text-light icon icon icon
+    img(id="landing-image" src="/images/bg_placeholder.jpg")
 </template>
 
 <script>

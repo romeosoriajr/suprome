@@ -2,19 +2,9 @@
   "name": "suprome",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.4.0",
-    "buefy": "^0.8.13",
-    "gridsome": "^0.7.0"
   },
   "devDependencies": {
-    "gridsome-plugin-pug": "^0.0.3",
-    "gridsome-plugin-tailwindcss": "^2.2.30",
-    "pug": "^2.0.4"
   }
 }

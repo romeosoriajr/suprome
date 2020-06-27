@@ -4,8 +4,25 @@
   color: #4E4E4E;
 }
 
-.profile-card .card {
-  max-width: 450px;
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-card{
+  padding: 10px;
+  min-width: 400px;
   border: 1px solid green;
   border-radius: 15px;
 }

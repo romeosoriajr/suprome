@@ -1,10 +1,22 @@
 ---
 layout: default.njk
-title: Romeo Soria Jr.
-subtitle: Javascript Developer
+name: Romeo Soria Jr.
+occupation: Javascript Developer
+twitter: '@romeoso'
+github: '@romeosoriajr'
+email: hey@rome.af
+
 ---
-<div>
-  <p> from index.njk </p>
-  <h1>{{ title }}</h1>
-  <h2>{{ subtitle }} </h2>
+<div class="profile-card">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-header">
+        <h1>{{ name }}</h1>
+        <h2>{{ occupation }} </h2>
+      </div>
+      <div class="card-info">
+        <h3> email: {{ email }} </h3>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,12 @@
+* {
+  background-color: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4E4E4E;
+}
+
+.profile-card .card {
+  max-width: 450px;
+  border: 1px solid green;
+  border-radius: 15px;
+}
+

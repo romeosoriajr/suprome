@@ -1,7 +1,7 @@
 ---
 layout: default.njk
 name: Romeo Soria Jr.
-subtitle: Javascript Developer
+subtitle: JavaScript Developer
 twitter: '@romeoso'
 github: '@romeosoriajr'
 email: hey@rome.af
@@ -10,7 +10,7 @@ email: hey@rome.af
 <div class="profile-card">
   <div class="card">
     <div class="item">
-      <div class="card-content">
+      <div class="card-details">
         <div class="card-header">
           <div class="name">
             {{ name }}
@@ -20,10 +20,11 @@ email: hey@rome.af
           </div>
         </div>
         <div class="card-info">
-          email: {{ email }}
+          icon: {{ email }}
         </div>
+      </div>
     </div>
-    <div class="item">
+    <div class="item card-image">
       <img src="./images/profile.jpg"></img>
     </div>
   </div>

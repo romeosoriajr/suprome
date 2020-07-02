@@ -29,10 +29,12 @@ body {
 
 }
 
+
 .icon {
   width: 2vw;
   padding-right: 10px;
 }
+
 
 
 .profile-card .card {
@@ -87,6 +89,12 @@ body {
   }
 
 
+  .card-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .item.card-image {
     display: flex;
     align-items: center;
@@ -96,10 +104,18 @@ body {
     border-radius: 50%;
   }
   .name {
-    font-size: 5rem;
+    font-size: 8vw;
   }
 
   .subtitle {
-    font-size: 3rem;
+    font-size: 6vw;
+  }
+  .info-text {
+    font-size: 4vw;
+  }
+
+  .icon {
+    width: 5vw;
   }
 }
+

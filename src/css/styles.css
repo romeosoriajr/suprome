@@ -1,0 +1,121 @@
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #D1D4C9;
+  font-size: 1.5vw;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  background-color: #323232;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card {
+  border: 1px solid #F6C90E;
+  border-radius: 30px;
+  padding: 10px;
+
+}
+
+
+.icon {
+  width: 2vw;
+  padding-right: 10px;
+}
+
+
+
+.profile-card .card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+
+}
+
+.item {
+  padding: 10px;
+}
+
+.item.card-image img {
+  width: 13vw;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+}
+
+/* vertical */
+@media (max-width: 1000px) {
+
+  .profile-card {
+    height: 90%;
+    width: 80%;
+  }
+  .profile-card .card {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+  .card-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item.card-image {
+    display: flex;
+    align-items: center;
+  }
+  .item.card-image img {
+    width: 40vw;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 8vw;
+  }
+
+  .subtitle {
+    font-size: 6vw;
+  }
+  .info-text {
+    font-size: 4vw;
+  }
+
+  .icon {
+    width: 5vw;
+  }
+}
+

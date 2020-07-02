@@ -1,0 +1,11 @@
+{
+  "name": "suprome",
+  "private": true,
+  "scripts": {
+    "dev": "npx @11ty/eleventy --config=eleventy.config.js --input=./src --output=dist --serve"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}

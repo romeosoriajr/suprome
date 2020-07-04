@@ -29,12 +29,10 @@ body {
 
 }
 
-
 .icon {
   width: 2vw;
   padding-right: 10px;
 }
-
 
 
 .profile-card .card {
@@ -65,21 +63,25 @@ body {
 }
 
 .name {
-  font-size: 2rem;
+  font-size: 3vw;
   font-weight: 600;
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 2.25vw;
 }
 
-/* vertical */
-@media (max-width: 1000px) {
+.description {
+  font-size: 1.25vw;
+}
+
+@media (orientation: portrait) {
 
   .profile-card {
-    height: 90%;
+    height: 75%;
     width: 80%;
   }
+
   .profile-card .card {
     width: 100%;
     height: 100%;
@@ -88,11 +90,27 @@ body {
     justify-content: space-evenly;
   }
 
+  .card-content {
+    height: 100%;
+  }
 
   .card-details {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .card-header {
+    height: 50%;
+  }
+
+  .card-info {
+    height: 50%;
+  }
+
+  .item {
+    height: 50%;
   }
 
   .item.card-image {
@@ -104,11 +122,16 @@ body {
     border-radius: 50%;
   }
   .name {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 
   .subtitle {
-    font-size: 6vw;
+    font-size: 5vw;
+  }
+
+  .description {
+    font-size: 3vw;
+
   }
   .info-text {
     font-size: 4vw;

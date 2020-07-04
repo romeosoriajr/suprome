@@ -1,7 +1,8 @@
 ---
 layout: default.njk
 name: Romeo Soria Jr.
-subtitle: JavaScript Developer
+subtitle: Making things for the web.
+desc: Vanilla JavaScript, Vue, & Node
 twitter: '@romeoso'
 github: '@romeosoriajr'
 email: hey@rome.af
@@ -18,12 +19,24 @@ email: hey@rome.af
           <div class="subtitle">
             {{ subtitle }}
           </div>
+          <div class="description">
+            {{ desc }}
+          </div>
         </div>
+
         <div class="card-info">
-          <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADD0lEQVR4nO3aT4hWVRjH8Y9DWFAKSkQz0kIlp6QWiSmBLvy3SQjamoqRCUWrEkUUAxfiInAhutMYIdwI/kEEzT+EGy2Vliq5NG2gachxY5Itzh3fo3ibec9733uH4Xzh4T3vee957u957r3nnHveQyaTyWQymUwmU8Z07MBVjODxBLcR/ILthfaOWIzfJ0BQqXYHi1KDfwvDEyCITu0v9Kck4ELk5E98ht4URzXTi40Y0tJ/rl0n86PG/+D9CgXWxQI81IqjrbtgU9TwZOXS6uOUVhwbn3dAT0nDGVH5WsWi6uRqVJ7ZTsN5+K2wN6tUVDOTJY5MpltMKanvwSdF+Qf8W4+cykmOY73W8LGuel21MWYcZcPgnKg8t2JRdTJmHGUJGIstuIvvOvBRFVuFYW5zSuNU8d/g9eJzAC8k+umEHuzDHuHqfpvqJIWBqLwWp/Fqoq8UZuAYvorqjqY4Sk3AVuyNvq/CdSxP9NcOS4Xp+UdR3QA+T3GWmoDH+FpYdRkdWt4QXjsPY1ai3/+jD9/jJ8yOdOzBp3iU4rTTDmw3PhTWCwjzinW4jQMSFyKeoR/7C58btOYuw/gY24REJFFFD34G7+BIVPcivsANXBZ66PfGeb4e4V1+c9H2Br7ES9ExR4tznuhQe2W99z2swSHswgfRb4sLg79xq7AhPCjqXxE6tnmFlS1mXsFOnK1Id+XD17nCVgpXbTWmRr9Px8LCxstDYZQ5gB+rkdmiW+P3aCJmCs/pCiwT5g7j4S4u4jyOC3dLV+j2BGYIBwuD14ROba5w279c1I8Ij8Nt3MRgl3U9oe4Z3GBhl2o+bylNz+MbJyegaQFNkxPQtICmyQloWkDT5AQ0LaBpcgKaFtA0ZQmIl5emlhwzKShLwB9R+d06hHSJ2VF5uJ2Gb3t6i0zyTqsGme/pbX1L23VwPmo8JGwx6atQYLfoE7QOaun/VUJ/1y9sMWt6m1undl9YZE1ikbDZsOkgUu0OlqQGP8o0Ye39ZyGbTQc1nit+Wfj3alqnwWcymUwmk8lkJiv/ARWbndQ8j/h8AAAAAElFTkSuQmCC" alt="email-icon"/>
-          <span class="info-text">
-            {{ email }}
-          </span>
+          <div class="contact">
+            <div class="contact-icon">
+              <svg class="emailicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1.5vw" height="1.5vw">
+                  <path class="svgicon" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 2.5 2 C 1.6774686 2 1 2.6774686 1 3.5 L 1 11.5 C 1 12.322531 1.6774686 13 2.5 13 L 13.5 13 C 14.322531 13 15 12.322531 15 11.5 L 15 3.5 C 15 2.6774686 14.322531 2 13.5 2 L 2.5 2 z M 2.5 3 L 13.5 3 C 13.533508 3 13.562289 3.0135998 13.59375 3.0195312 L 8 6.8925781 L 2.40625 3.0195312 C 2.4377112 3.0135998 2.4664925 3 2.5 3 z M 2 3.953125 L 8 8.1074219 L 14 3.9550781 L 14 11.035156 L 10.857422 8.40625 L 10 9 L 13.574219 11.984375 C 13.54893 11.98813 13.526538 12 13.5 12 L 2.5 12 C 2.4734621 12 2.4510698 11.98813 2.4257812 11.984375 L 6 9 L 5.1425781 8.40625 L 2 11.035156 L 2 3.953125 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+              </svg>
+            </div>
+            <div class="contact-handle">
+              <span class="info-text">
+                {{ email }}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
